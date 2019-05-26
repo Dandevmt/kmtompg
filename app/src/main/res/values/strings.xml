@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KmMpg</string>
+    <string name="app_name">Km To Mpg</string>
     <string name="distance_header">Distance</string>
     <string name="km_label">Kilometers</string>
     <string name="km_hint">Kilometers traveled</string>
