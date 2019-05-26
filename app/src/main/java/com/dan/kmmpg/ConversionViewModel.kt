@@ -65,11 +65,10 @@ class ConversionViewModel : ViewModel() {
         return "%.2f".format(num)
     }
 
-    fun clearValues() {
-        kilometers.value = 0.0
-        miles.value = 0.0
-        liters.value = 0.0
-        gallons.value = 0.0
+    val clearValues = MutableLiveData<Boolean>()
+    fun clearVals() {
+        clearValues.value = true
+        clearValues.value = false
     }
 
     val kilometersPerLiter = MutableLiveData<String>()

@@ -74,6 +74,14 @@ class MainActivity : AppCompatActivity() {
         viewModel.milesPerGallon.observe(this, Observer<String> {
             mpgView.text = "Miles Per Gallon: $it"
         })
+        viewModel.clearValues.observe(this, Observer<Boolean> {
+            if (it) {
+                kilometersView.setText("")
+                milesView.setText("")
+                litersView.setText("")
+                gallonsView.setText("")
+            }
+        })
 
     }
 
@@ -86,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
-            R.id.action_clear_field -> viewModel.clearValues()
+            R.id.action_clear_field -> viewModel.clearVals()
         }
 
         return super.onOptionsItemSelected(item)
