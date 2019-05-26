@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">KmMpg</string>
+    <string name="distance_header">Distance</string>
+    <string name="km_label">Kilometers</string>
+    <string name="km_hint">Kilometers traveled</string>
+    <string name="miles_label">Miles</string>
+    <string name="fuel_header">Fuel</string>
+    <string name="liters_label">Liters</string>
+    <string name="gallons_label">Gallons</string>
+    <string name="usage_header">Usage</string>
+    <string name="kpl_label">Kilometers Per Liter</string>
+    <string name="mpg_label">Miles Per Gallon</string>
+    <string name="clear_fields_label">Clear Fields</string>
+</resources>
